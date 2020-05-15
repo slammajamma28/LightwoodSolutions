@@ -72,3 +72,17 @@ strong {
     margin-top: 75px; /* Add a top margin to avoid content overlay */
     margin-left: 20px;
 }
+
+/* Word Search buttons */
+td > button {
+    width: 250px;
+}
+
+/*Word search show active menu*/
+div.main div.active {
+    display: block;
+}
+/*Word search hide inactive menu*/
+div.main div {
+    display: none;
+}
