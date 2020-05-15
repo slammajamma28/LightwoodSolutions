@@ -36,7 +36,6 @@ $(document).ready(function() {
     // *******
 
     $("button.wordsearchmenubutton").click(function() {
-        console.log($(this).text());
         // Hide the main puzzle menu
         $("#menuGrid").removeClass('active');
         // Show the back button
@@ -56,10 +55,18 @@ $(document).ready(function() {
     });
 
     $("button.wordsearchpuzzlebutton").click(function() {
-        $("#showSolution").addClass('active');
+        $("#myModal").addClass('active');
+        $("div.modal-content").addClass('active');
         var dispuzzle = $(this).attr('data');
         var activecat = $('.category.active').attr('id');
-        $("#showSolution").html("<img src='" + activecat + "/" + dispuzzle + ".jpg' />");
-        console.log("<img src='" + activecat + "/" + dispuzzle + ".png' />")
+        console.log("Active: " + dispuzzle + " in " + activecat);
+        $("#puzzleimg").attr('src', activecat + "/" + dispuzzle + ".jpg")
     });
+
+    $("span.close").click(function() {
+        $("#myModal").removeClass('active');
+        $("div.modal-content").removeClass('active');
+    });
+
+    
 });
