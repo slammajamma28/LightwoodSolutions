@@ -1,3 +1,7 @@
+$(document).keyup(function(e) {
+    if (e.keyCode == 27) $(".close").click();
+  });
+
 $(document).ready(function() {
     // *******
     // Navigating Menu Screens, a la Crosswords
@@ -47,7 +51,7 @@ $(document).ready(function() {
 
     $("#backButton").click(function() {
         // Hide puzzle
-        $(".active").removeClass('active');
+        $("div.active").removeClass('active');
         // Show the main puzzle menu
         $("#menuGrid").addClass('active');
         // Hide the back button
@@ -68,5 +72,4 @@ $(document).ready(function() {
         $("div.modal-content").removeClass('active');
     });
 
-    
 });

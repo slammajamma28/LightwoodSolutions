@@ -2,6 +2,10 @@ html {
     background-color: rgb(17, 17, 17);
 }
 
+div {
+    display:inline-block;
+}
+
 h1 {
     color: darkorange;
 }
@@ -79,6 +83,7 @@ strong {
 }
 
 .main p {
+    float: left;
     padding: 0px 10px;
 }
 
@@ -108,7 +113,7 @@ div.solutions div {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -121,16 +126,16 @@ div.solutions div {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: auto; /* Could be more or less, depending on screen size */
 }
 .modal-content > img {
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: darkorange;
     float: right;
     padding: 10px 20px 0px 0px;
     font-size: 40px;
@@ -139,7 +144,7 @@ div.solutions div {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: red;
     text-decoration: none;
     cursor: pointer;
 } 
