@@ -64,7 +64,7 @@ $(document).ready(function() {
         var dispuzzle = $(this).attr('data');
         var activecat = $('.category.active').attr('id');
         console.log("Active: " + dispuzzle + " in " + activecat);
-        $("#puzzleimg").attr('src', activecat + "/" + dispuzzle + ".jpg")
+        $("#puzzleimg").attr('src', activecat + "/" + dispuzzle + ".png")
     });
 
     $("span.close").click(function() {
